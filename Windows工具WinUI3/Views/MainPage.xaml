@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" ?>
+<Page
+    x:Class="Windows工具WinUI3.Views.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:Windows工具WinUI3.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid>
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="*" />
+
+        </Grid.RowDefinitions>
+
+        <GridView x:Name="gridView" Grid.Row="0" IsItemClickEnabled="False" Margin="8">
+            <GridView.Header>
+                <Grid
+                    x:Name="Header"
+                    Height="100"
+                    VerticalAlignment="Top"
+>
+                    <Rectangle
+                        x:Name="OverlayRectangle"
+                        HorizontalAlignment="Stretch"
+                        VerticalAlignment="Top"
+                        Fill="#BFCFB5C0" />
+                    <StackPanel
+                        x:Name="TextContainer"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        Orientation="Horizontal">
+                        <StackPanel
+                            Margin="20,12,0,0"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Top"
+                            Orientation="Vertical">
+                            <TextBlock
+                                x:Name="TitleBlock"
+                                Style="{ThemeResource TitleTextBlockStyle}"
+                                Foreground="White"
+                                Text="Windows工具" />
+
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+            </GridView.Header>
+            <GridView.Items>
+                <GridViewItem>
+                    <Button x:Name="myButton" Click="myButton_Click">Hyper-V快速创建(管理员)(需启动Hyper-V)</Button>
+                </GridViewItem>
+                <GridViewItem>
+                    <Button x:Name="myButton1" Click="myButton_Click2">Hyper-V管理器(管理员)(需启动Hyper-V)(可能无法使用，敬请期待！)</Button>
+                </GridViewItem>
+                <GridViewItem>
+                    <Button x:Name="myButton2" Click="myButton_Click3">iSCSI 发起程序(管理员)</Button>
+
+                </GridViewItem>
+                <GridViewItem>
+                    <Button x:Name="myButton3" Click="myButton_Click4">ODBC Data Sources (32-bit)(管理员)</Button>
+
+                </GridViewItem>
+                <GridViewItem>
+                    <Button x:Name="myButton4" Click="myButton_Click5">ODBC 数据源(64 位)(管理员)</Button>
+
+                </GridViewItem>
+                <GridViewItem>
+                    <Button x:Name="myButton5" Click="myButton_Click6">Power Automate(可能无法使用，敬请期待！)</Button>
+                </GridViewItem>
+                <GridViewItem>
+                    <Button x:Name="myButton6" Click="myButton_Click7">Windows Media Player Legacy</Button>
+
+                </GridViewItem>
+                <GridViewItem>
+                    <Button x:Name="myButton7" Click="myButton_Click8">Windows Powershell</Button>
+
+                </GridViewItem>
+                <GridViewItem>
+                    <Button x:Name="myButton8" Click="myButton_Click9">Windows Powershell(x86)</Button>
+
+                </GridViewItem>
+                <GridViewItem>
+                    <Button x:Name="myButton9" Click="myButton_Click10">Windows Powershell ISE</Button>
+
+                </GridViewItem>
+                <GridViewItem>
+                    <Button x:Name="myButton10" Click="myButton_Click11">Windows Powershell ISE(x86)</Button>
+
+                </GridViewItem>
+                <GridViewItem>
+                    <Button x:Name="myButton11" Click="myButton_Click12">Windows 内存诊断(管理员)</Button>
+                </GridViewItem>
+                <GridViewItem>
+                    <Button x:Name="myButton12" Click="myButton_Click13">事件查看器(管理员)</Button>
+
+                </GridViewItem>
+                <GridViewItem>
+                    <Button x:Name="myButton13" Click="myButton_Click14">任务管理器(管理员)</Button>
+
+                </GridViewItem>
+                <GridViewItem>
+                    <Button x:Name="myButton14" Click="myButton_Click15">任务计划程序(可能无法使用，敬请期待！)</Button>
+
+                </GridViewItem>
+                <GridViewItem>
+                    <Button x:Name="myButton15" Click="myButton_Click16">写字板</Button>
+
+                </GridViewItem>
+                <GridViewItem>
+                    <Button x:Name="myButton16" Click="myButton_Click17">命令提示符</Button>
+
+                </GridViewItem>
+                <GridViewItem>
+                    <Button x:Name="myButton17" Click="myButton_Click18">字符映射表</Button>
+
+                </GridViewItem>
+                <GridViewItem>
+                    <Button x:Name="myButton18" Click="myButton_Click19">性能监视器</Button>
+
+                </GridViewItem>
+                <GridViewItem>
+                    <Button x:Name="myButton19" Click="myButton_Click20">恢复驱动器(管理员)</Button>
+
+                </GridViewItem>
+                <GridViewItem>
+                    <Button x:Name="myButton20" Click="myButton_Click21">打印管理(可能无法使用，敬请期待！)</Button>
+
+                </GridViewItem>
+                <GridViewItem>
+                    <Button x:Name="myButton21" Click="myButton_Click22">服务(可能无法使用，敬请期待！)</Button>
+
+                </GridViewItem>
+                <GridViewItem>
+                    <Button x:Name="myButton22" Click="myButton_Click23">本地安全策略(可能无法使用，敬请期待！)</Button>
+
+                </GridViewItem>
+                <GridViewItem>
+                    <Button x:Name="myButton23" Click="myButton_Click24">步骤记录器(可能无法使用，敬请期待！)</Button>
+                </GridViewItem>
+                <GridViewItem>
+                    <Button x:Name="myButton24" Click="myButton_Click25">注册表编辑器(管理员)</Button>
+
+                </GridViewItem>
+                <GridViewItem>
+                    <Button x:Name="myButton25" Click="myButton_Click26">碎片整理和优化驱动器</Button>
+
+                </GridViewItem>
+                <GridViewItem>
+                    <Button x:Name="myButton26" Click="myButton_Click27">磁盘清理</Button>
+                </GridViewItem>
+                <GridViewItem>
+                    <Button x:Name="myButton27" Click="myButton_Click28">系统信息</Button>
+
+                </GridViewItem>
+
+                <GridViewItem>
+                    <Button x:Name="myButton28" Click="myButton_Click29">系统配置(管理员)</Button>
+
+                </GridViewItem>
+                <GridViewItem>
+                    <Button x:Name="myButton29" Click="myButton_Click30">组件服务</Button>
+
+                </GridViewItem>
+                <GridViewItem>
+                    <Button x:Name="myButton30" Click="myButton_Click31">计算机管理(可能无法使用，敬请期待！)</Button>
+
+                </GridViewItem>
+                <GridViewItem>
+                    <Button x:Name="myButton31" Click="myButton_Click32">资源监视器(可能无法使用，敬请期待！)</Button>
+
+                </GridViewItem>
+                <GridViewItem>
+                    <Button x:Name="myButton32" Click="myButton_Click33">运行(可能无法使用，敬请期待！)</Button>
+
+                </GridViewItem>
+                <GridViewItem>
+                    <Button x:Name="myButton33" Click="myButton_Click34">远程桌面连接</Button>
+
+                </GridViewItem>
+                <GridViewItem>
+                    <Button x:Name="myButton34" Click="myButton_Click35">高级安全 Windows Defender 防火墙(可能无法使用，敬请期待！)</Button>
+                </GridViewItem>
+            </GridView.Items>
+            <GridView.Footer>
+                <InfoBar
+                    Title="注意"
+                    Margin="8"
+                    IsClosable="False"
+                    IsOpen="True"
+                    Message="有些应用需要管理员，建议让该应用以管理员身份运行，否则可能会导致这个应用卡死！(使用管理员可忽略)。有些应用点了之后可能没有（如Hyper-V管理器），请在“启用或关闭Windows功能”中开启对应应用或者到“设置-应用-可选功能-添加可选功能”中添加应用。注意有些应用可能是Microsoft Store应用、.msc以及快捷方式，可能打不开，敬请谅解！" />
+            </GridView.Footer>
+        </GridView>
+
+
+    </Grid>
+</Page>
